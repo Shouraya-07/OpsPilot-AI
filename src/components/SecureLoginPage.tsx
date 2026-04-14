@@ -86,8 +86,8 @@ export function SecureLoginPage({ onLoginSuccess }: SecureLoginPageProps) {
               <Building2 className="h-8 w-8 text-white" />
             </div>
             <div className="text-left">
-              <h1 className="text-2xl font-medium text-foreground">Resilient Terminal</h1>
-              <p className="text-sm text-muted-foreground">Orchestrator Platform</p>
+              <h1 className="text-2xl font-medium text-foreground">OpsPilot AI</h1>
+              <p className="text-sm text-muted-foreground">Operations Platform</p>
             </div>
           </div>
           
@@ -225,7 +225,7 @@ export function SecureLoginPage({ onLoginSuccess }: SecureLoginPageProps) {
             Powered by Honeywell Industrial Automation
           </p>
           <div className="flex items-center justify-center space-x-4 text-xs text-muted-foreground">
-            <span>© 2024 Resilient Terminal Orchestrator</span>
+            <span>© 2024 OpsPilot AI</span>
             <span>•</span>
             <span>Enterprise Security</span>
           </div>

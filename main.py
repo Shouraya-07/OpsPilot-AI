@@ -4,9 +4,6 @@ Integrates with gemma-3-4b-it-Q8_0.gguf model for AI chatbot functionality
 """
 
 import os
-import json
-import io
-import uuid
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 from datetime import datetime
@@ -25,15 +22,15 @@ except Exception as e:
     print(f"⚠️ Pandas import failed: {e}")
     print("⚠️ Some data processing features will be limited.")
 
-from fastapi import FastAPI, HTTPException, File, UploadFile, Form, Query
+from fastapi import FastAPI, HTTPException, File, UploadFile, Form
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import uvicorn
 
 # --- CONFIGURATION ---
-MODEL_FILE_PATH = "./gemma-3-4b-it-Q8_0.gguf"
-DATA_FOLDER_PATH = "./data"
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_FILE_PATH = str(BASE_DIR / "gemma-3-4b-it-Q8_0.gguf")
+DATA_FOLDER_PATH = str(BASE_DIR / "data")
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -584,6 +581,6 @@ if __name__ == "__main__":
     uvicorn.run(
         app,
         host="0.0.0.0",
-        port=8001,
+        port=8002,
         reload=True
     )

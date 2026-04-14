@@ -82,7 +82,7 @@ export function LoginPage({ onOperationSelect }: LoginPageProps) {
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-cyan-600 bg-clip-text text-transparent">
-                Resilient Terminal Orchestrator
+                OpsPilot AI
               </h1>
               <p className="text-muted-foreground text-sm">Enterprise Terminal Management Platform</p>
             </div>
@@ -156,7 +156,7 @@ export function LoginPage({ onOperationSelect }: LoginPageProps) {
 
         {/* Footer */}
         <div className="text-center mt-8 text-xs text-muted-foreground">
-          <p>© 2024 Resilient Terminal Orchestrator • Enterprise Management Platform</p>
+          <p>© 2024 OpsPilot AI • Enterprise Management Platform</p>
         </div>
       </div>
     </div>

@@ -4,15 +4,15 @@ echo =====================================
 echo.
 
 echo 1. Testing Backend Health...
-curl -s http://localhost:8001/ 
+curl -s http://localhost:8002/ 
 echo.
 
 echo 2. Testing Chat API...
-curl -s -X POST http://localhost:8001/api/chat -H "Content-Type: application/json" -d "{\"message\": \"Hello\", \"operation_type\": \"terminal\"}"
+curl -s -X POST http://localhost:8002/api/chat -H "Content-Type: application/json" -d "{\"message\": \"Hello\", \"operation_type\": \"terminal\"}"
 echo.
 
 echo 3. Testing Operation Data API...
-curl -s http://localhost:8001/api/operation-data/terminal
+curl -s http://localhost:8002/api/operation-data/terminal
 echo.
 
 echo 4. Frontend Status...

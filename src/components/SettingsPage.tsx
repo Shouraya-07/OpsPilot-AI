@@ -327,7 +327,7 @@ export function SettingsPage({ onNavigate, operationType = 'terminal', onLogout 
                 <Sparkles className="h-6 w-6 text-white" />
               </div>
               <div className="flex-1">
-                <h2 className="text-card-foreground">Resilient Terminal Orchestrator</h2>
+                <h2 className="text-card-foreground">OpsPilot AI</h2>
                 <p className="text-muted-foreground text-sm">Version 1.0.0 • Honeywell Hackathon</p>
                 <div className="flex items-center space-x-2 mt-2">
                   <Badge className="bg-green-100 text-green-700 text-xs">Connected</Badge>

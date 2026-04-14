@@ -27,8 +27,8 @@ export function EntryPage({ onStartSimulation }: EntryPageProps) {
               <Zap className="h-6 w-6 text-white" />
             </div>
           </div>
-          <h1 className="text-foreground mb-2">Resilient Terminal</h1>
-          <h2 className="text-muted-foreground">Orchestrator</h2>
+          <h1 className="text-foreground mb-2">OpsPilot AI</h1>
+          <h2 className="text-muted-foreground">Operations Platform</h2>
           <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
             AI-powered terminal management with offline analytics and self-service insights
           </p>
